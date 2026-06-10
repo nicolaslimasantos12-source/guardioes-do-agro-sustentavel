@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guardiões do Agro Sustentável</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- TELA INICIAL -->
+
+<section id="inicio" class="tela ativa">
+
+    <div class="overlay">
+
+        <h1>🌎 Guardiões do Agro Sustentável</h1>
+
+        <h2>Missão: Equilibrar Produção e Meio Ambiente</h2>
+
+        <p>
+            Teste seus conhecimentos sobre sustentabilidade,
+            tecnologia agrícola e preservação ambiental.
+        </p>
+
+        <button id="btnIniciar">
+            🚜 Começar Missão
+        </button>
+
+    </div>
+
+</section>
+
+<!-- TELA DO QUIZ -->
+
+<section id="quiz" class="tela">
+
+    <header>
+
+        <h1>🏆 Guardiões do Agro Sustentável</h1>
+
+        <div id="progressoTexto">
+            Pergunta 1 de 15
+        </div>
+
+        <div class="barraContainer">
+            <div id="barraProgresso"></div>
+        </div>
+
+    </header>
+
+    <main class="quizContainer">
+
+        <img id="imagemPergunta" src="" alt="Imagem da Pergunta">
+
+        <h2 id="pergunta"></h2>
+
+        <div class="alternativas">
+
+            <button class="alternativa" id="alt0"></button>
+
+            <button class="alternativa" id="alt1"></button>
+
+            <button class="alternativa" id="alt2"></button>
+
+            <button class="alternativa" id="alt3"></button>
+
+        </div>
+
+        <div id="mensagem"></div>
+
+    </main>
+
+</section>
+
+<!-- TELA FINAL -->
+
+<section id="resultado" class="tela">
+
+    <div class="certificado">
+
+        <h1 id="tituloFinal"></h1>
+
+        <h2 id="medalha"></h2>
+
+        <div id="estatisticas"></div>
+
+        <div id="historico"></div>
+
+        <button onclick="location.reload()">
+            🔄 Jogar Novamente
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
